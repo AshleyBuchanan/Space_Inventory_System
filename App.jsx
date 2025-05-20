@@ -18,9 +18,8 @@ function App ()
 			<h1>Inventory</h1>
 			<ol>
                 {inventoryItems.map(item => (
-                    <li>
+                    <li key = {item.name}>
                         <InventoryItem 
-                            key      = {item.name}
                             name     = {item.name}
                             type     = {item.type}
                             quantity = {item.quantity}
